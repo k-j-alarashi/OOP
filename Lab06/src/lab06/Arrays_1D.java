@@ -50,19 +50,25 @@ public class Arrays_1D {
     
 
     public static int[] sumTwoArrays(int[] arr1, int[] arr2) {
+     if (arr1.length == arr2.length){
         int[] res = new int[arr1.length];
         for (int i = 0; i < res.length; i++) {
             res[i] = arr1[i] + arr2[i];
         }
         return res;
+      }
+      return null;
     }
 
     public static int[] mulTwoArrays(int[] arr1, int[] arr2) {
+        if (arr1.length == arr2.length){
         int[] res = new int[arr1.length];
         for (int i = 0; i < res.length; i++) {
             res[i] = arr1[i] * arr2[i];
         }
         return res;
+      }
+      return null;
     }
 
     public static int maxElement(int[] arr) {
