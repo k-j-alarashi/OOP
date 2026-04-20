@@ -26,8 +26,7 @@ public class Arrays_1D {
         }
         return false;
     }
-    
-    // update & delete by element.
+
     public static boolean update(int[] arr, int oldElement, int newElement) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == oldElement) {
@@ -38,6 +37,7 @@ public class Arrays_1D {
         return false;
     }
 
+    // دالة الحذف من دون عملية (shifting) 
     public static boolean delete(int[] arr, int oldElement) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == oldElement) {
@@ -47,31 +47,39 @@ public class Arrays_1D {
         }
         return false;
     }
-    
 
     public static int[] sumTwoArrays(int[] arr1, int[] arr2) {
-    if (arr1.length == arr2.length){
-        int[] res = new int[arr1.length];
-        for (int i = 0; i < res.length; i++) {
-            res[i] = arr1[i] + arr2[i];
+        // شرط للتاكد من ان طول المصفوفتين متساويتين
+        if (arr1.length == arr2.length) {
+            int[] res = new int[arr1.length];
+            for (int i = 0; i < res.length; i++) {
+                res[i] = arr1[i] + arr2[i];
+            }
+            return res;
         }
-        return res;
-      }
-      return null;
+        return null;
     }
 
     public static int[] mulTwoArrays(int[] arr1, int[] arr2) {
-    if (arr1.length == arr2.length){
-        int[] res = new int[arr1.length];
-        for (int i = 0; i < res.length; i++) {
-            res[i] = arr1[i] * arr2[i];
+        // شرط للتاكد من ان طول المصفوفتين متساويتين
+        if (arr1.length == arr2.length) {
+            int[] res = new int[arr1.length];
+            for (int i = 0; i < res.length; i++) {
+                res[i] = arr1[i] * arr2[i];
+            }
+            return res;
         }
-        return res;
-      }
-      return null;
+        return null;
     }
 
     public static int maxElement(int[] arr) {
+        // شرط التأكد من ان المصفوفة غير فارغة
+        // يتم طباعة عبارة وارجاع -1 
+        // -1 ليس رقم في المصفوفة وانما يدل على ان المصفوفة فارغة
+        if (arr.length == 0) {
+            System.out.println("The Array is empty ...");
+            return -1;
+        }
         int max = arr[0];
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] > max) {
