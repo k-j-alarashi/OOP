@@ -47,17 +47,7 @@ public class Arrays_1D {
         }
         return false;
     }
-    
-    // update & delete by index.
-    public static boolean updateByIndex(int[] arr, int index, int newElement) {
-        arr[index] = newElement;
-        return true;
-    }
-
-    public static boolean deleteByIndex(int[] arr, int index) {
-        arr[index] = 0;
-        return true;
-    }
+    
 
     public static int[] sumTwoArrays(int[] arr1, int[] arr2) {
         int[] res = new int[arr1.length];
