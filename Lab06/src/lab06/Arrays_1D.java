@@ -6,8 +6,9 @@ public class Arrays_1D {
 
     public static void printArr(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            System.out.println("arr[" + i + "] = " + arr[i]);
+            System.out.print("arr[" + i + "] = " + arr[i]+"     ");
         }
+        System.out.println("\n=============================");
     }
 
     public static void inputArrElements(int[] arr) {
@@ -87,5 +88,12 @@ public class Arrays_1D {
             }
         }
         return max;
+    }
+    
+    public static void deleteWithShift(int[] arr , int index){
+        for (int i = index; i < arr.length - 1; i++) {
+            arr[i] = arr[i+1];            
+        }
+        arr[arr.length-1] = 0;
     }
 }
