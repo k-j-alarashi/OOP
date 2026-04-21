@@ -54,7 +54,7 @@ public class Arrays_2D {
         int[] res = new int[arr.length * arr[0].length];
         int i = 0;
         for (int row = 0; row < arr.length; row++) {
-            for (int col = 0; col < arr[0].length; col++) {
+            for (int col = 0; col < arr[row].length; col++) {
                 res[i] = arr[row][col];
                 i++;
             }
