@@ -1,4 +1,4 @@
-package lab06;
+package arrays;
 
 import java.util.Scanner;
 
