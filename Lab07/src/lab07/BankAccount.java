@@ -43,7 +43,7 @@ public class BankAccount {
     }
 
     public void withdraw(double amount) {
-        if (amount <= this.amount) {
+        if (amount <= this.amount && this.amount > 0) {
             this.amount = this.amount - amount;
             System.out.println("====================================");
             System.out.println("Withdraw Amount :  " + amount+" $ ");
