@@ -2,11 +2,11 @@ package lab07;
 
 public class Lab07 {
     public static void main(String[] args) {
-        BankAccount ba = new BankAccount(8498, "Khaled");
-        System.out.println("Amount      :  "+ba.getAmount()+" $ ");
-        ba.deposit(2500);
-        ba.deposit(300);
-        ba.withdraw(1000);
-        ba.display();
+        BankAccount b = new BankAccount(142, "Khaled");
+        System.out.println("amount      :  "+b.getAmount());
+        b.deposit(3000);
+        b.deposit(4000);
+        b.withdraw(2000);
+        b.display();
    }
 }
