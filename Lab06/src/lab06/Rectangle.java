@@ -1,4 +1,4 @@
-package lab05;
+package lab06;
 
 public class Rectangle {
 
