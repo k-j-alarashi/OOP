@@ -2,27 +2,14 @@ package lab05;
 
 public class Lab05 {
     public static void main(String[] args) {
-        Student s1 = new Student(1, "Ahmed", 22, "CYN");
-        Student s2 = new Student(1, "Ahmed");
-        Student s3 = new Student();
+       int[][] arr = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
         
-        s1.display();
-        s2.display();
-        s3.display();
-        
-        
-        
-        
-//        Counter c = new Counter();
-//        System.out.println("counter : "+c.getCount());
-//        c.increment();
-//        System.out.println("counter : "+c.getCount());
-//        c.increment();
-//        System.out.println("counter : "+c.getCount());
-//        c.increment();
-//        System.out.println("counter : "+c.getCount());
-//        c.reset();
-//        System.out.println("counter : "+c.getCount());
+        Arrays_2D.printArr(arr);
+        System.out.println(Arrays_2D.search(arr, 3));
     }
     
 }
